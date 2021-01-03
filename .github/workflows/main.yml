@@ -2,6 +2,8 @@
 name: Auto Api Secret
 
 on: 
+  workflow_dispatch:
+    branches: [ main ]
   release:
     types: [published]
   push:
